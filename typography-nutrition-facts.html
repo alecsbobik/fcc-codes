@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Facts</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* html {
+            font-size: 16px;
+        } */
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .label {
+            border: 2px solid black;
+            width: 290px;
+            margin: 20px auto;
+            padding: 0 7px;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: -4px 0;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+        }
+
+        p {
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+
+        .divider {
+            border-bottom: 1px solid #888989;
+            margin: 2px 0;
+        }
+
+        .bold {
+            font-weight: 800;
+        }
+
+        /* Large Divider */
+        .large {
+            height: 3px;
+        }
+
+        /* Medium Divider */
+        .medium {
+            height: 1.5px;
+        }
+
+        .large,
+        .medium {
+            background-color: black;
+            border: 0;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+        }
+
+        .calories-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .calories-info h2 {
+            margin: 0;
+        }
+
+        .left-container p {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .calories-info span {
+            font-size: 14px;
+        }
+
+        .right {
+            justify-content: flex-end;
+        }
+
+        .indent {
+            margin-left: .5em;
+        }
+
+        .double-indent {
+            margin-left: 1em;
+        }
+
+        .right-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .right-container p {
+            justify-content: flex-end;
+        }
+
+        .three-columns {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .three-columns div {
+            display: flex;
+            justify-content: space-between;
+            margin: -0.2px 0;
+            padding: 0;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .middle {
+            text-align: center;
+        }
+
+        .middle,
+        .right {
+            width: 35%;
+            margin: 0;
+        }
+
+        .left {
+            text-align: left;
+            /* Align text in the left for the left column */
+        }
+
+        .right {
+            text-align: right;
+            /* Align text in the right for the right column */
+        }
+
+        .note {
+            font-size: 9px;
+            margin: 3px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="label">
+        <header>
+            <h1 class="bold">Nutrition Facts</h1>
+            <p>Serving Size (1 slice) <span>25g</span></p>
+            <p class="bold">Serving Per Container <span>5</span></p>
+        </header>
+        <div class="divider large"></div>
+        <div class="calories-info">
+            <div class="left-container">
+                <p>Amount Per Serving</p>
+                <p>Calories 111</p>
+            </div>
+            <span class="bold">Calories from Fat 27</span>
+        </div>
+        <div class="divider large"></div>
+        <p class="bold right no-divider">% RENI*</p>
+        <div class="divider medium"></div>
+        <div class="daily-value small-text">
+            <p><span class="bold">Total Fat 3g</span> 4%</p>
+            <p class="indent"><span>Saturated Fat 2g</span> 8%</p>
+            <p class="indent"><span>Trans Fat 0g</span></p>
+            <p class="indent"><span>Cholesterol 0g</span> 0%</p>
+            <p><span class="bold">Sodium 145 mg</span> 5%</p>
+            <p><span class="bold">Total Carbohydrates 18g</span> 5%</p>
+            <p class="indent"><span>Dietary Fiber 0g</span> 0%</p>
+            <p class="double-indent"><span>Soluble Fiber 0g</span></p>
+            <p class="double-indent"><span>Insoluble Fiber 0g</span></p>
+            <p class="indent"><span>Sugar 6g</span></p>
+            <p><span class="bold">Protein 3g</span></p>
+            <div class="divider large"></div>
+            <div class="right-container">
+                <p class="left"></p>
+                <p class="middle bold">Per Serving</p>
+                <p class="right bold">Per 100g</p>
+            </div>
+            <div class="divider medium"></div>
+            <div class="three-columns">
+                <div>
+                    <span class="left">Vitamin A</span>
+                    <span class="middle">6%</span>
+                    <span class="right">25%</span>
+                </div>
+                <div>
+                    <span class="left">Vitamin C</span>
+                    <span class="middle">1%</span>
+                    <span class="right">5%</span>
+                </div>
+                <div>
+                    <span class="left">Calcium</span>
+                    <span class="middle">5% </span>
+                    <span class="right">19%</span>
+                </div>
+                <div>
+                    <span class="left">Iron</span>
+                    <span class="middle">7%</span>
+                    <span class="right">27%</span>
+                </div>
+                <div>
+                    <span class="left">Vit. B1 (Thiamine)</span>
+                    <span class="middle">22%</span>
+                    <span class="right">89%</span>
+                </div>
+                <div>
+                    <span class="left">Vit. B2 (Riboflavin)</span>
+                    <span class="middle">9%</span>
+                    <span class="right">35%</span>
+                </div>
+                <div>
+                    <span class="left">Vit. B3 (Niacin)</span>
+                    <span class="middle">5%</span>
+                    <span class="right">19%</span>
+                </div>
+                <div>
+                    <span class="left">Folate</span>
+                    <span class="middle">18%</span>
+                    <span class="right">70%</span>
+                </div>
+            </div>
+            <div class="divider medium"></div>
+            <p class="note">
+                * Percent RENI (Recommendation Energy and Nutrient Intake) values are based on a 2, 490 calorie diet as
+                per FNRI reference adult requirement of 19-29 years old.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
