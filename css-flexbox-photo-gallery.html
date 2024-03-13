@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox using CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #f5f6f7;
+        }
+
+        .header {
+            text-align: center;
+            text-transform: uppercase;
+            padding: 32px;
+            background-color: #0a0a23;
+            color: #fff;
+            border-bottom: 4px solid #fdb347;
+        }
+
+        .gallery {
+            /* In this case, I have 3 columns in a row */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 330px;
+            height: 300px;
+            object-fit: contain;
+        }
+
+        .gallery::after {
+            content: "";
+            /* In this case, I check the width if image is aligned in the previous row images. Luckily, this measurements was aligned when I add an image. */
+            width: 675px;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 2.15rem 0 0 0;
+            padding: 32px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Favorite KDrama</h1>
+    </header>
+
+    <div class="gallery">
+        <img src="https://asianimg.pro/cover/goblin.png" alt="Goblin (2016)">
+        <img src="https://asianimg.pro/cover/reply-1988.png" alt="Reply 1988 (2015)">
+        <img src="https://asianimg.pro/cover/doctors.png" alt="Doctors (2016)">
+        <img src="https://asianimg.pro/cover/reach-of-sincerity.png" alt="Touch Your Heart (2019)">
+        <img src="https://asianimg.pro/cover/my-liberation-diary.png" alt="My Liberation Notes (2022)">
+        <img src="https://asianimg.pro/cover/uncontrollably-fond.png" alt="Uncontrollably Fond">
+        <img src="https://asianimg.pro/cover/the-girl-downstairs-1697446887.png" alt="Donna! (2023)">
+        <img src="https://asianimg.pro/cover/i-don-t-want-to-do-anything-1668005566.png" alt="Summer Strike (2022)">
+        <img src="https://asianimg.pro/cover/us-that-year.png" alt="Our Beloved Summer (2021)">
+        <img src="https://asianimg.pro/cover/twenty-five-twenty-one.png" alt="Twenty-Five Twenty-One (2022)">
+        <img src="https://asianimg.pro/cover/its-okay-thats-love-2014-1664918099.png"
+            alt="It's Okay, That's Love (2014)">
+        <img src="https://asianimg.pro/cover/mr-hong.png" alt="Hometown Cha-Cha-Cha (2021)">
+        <img src="https://asianimg.pro/cover/hotel-del-luna.png" alt="Hotel del Luna (2019)">
+        <img src="https://asianimg.pro/cover/dr-romantic-season-3-1679933809.png" alt="Dr. Romantic (2016)">
+        <img src="https://asianimg.pro/cover/mr-sunshine.png" alt="Mr. Sunshine (2018)">
+        <img src="https://asianimg.pro/cover/yumi-s-cell.png" alt="Yumi's Cells (2021)">
+        <img src="https://asianimg.pro/cover/big-mouse.png" alt="Big Mouth (2022)">
+        <img src="https://asianimg.pro/cover/cheer-up-1664423476.png" alt="Cheer Up (2022)">
+        <img src="https://asianimg.pro/cover/chaebol-family-s-youngest-son-1666106769.png" alt="Reborn Rich (2022)">
+        <img src="https://asianimg.pro/cover/ilta-scandal-1672762333.png" alt="Crash Course in Romance (2023)">
+        <img src="https://asianimg.pro/cover/understanding-of-love-1671558596.png" alt="The Interests of Love (2022)">
+        <img src="https://asianimg.pro/cover/tell-me-you-love-me-1698640655.png" alt="Tell Me That You Love Me (2023)">
+
+    </div>
+
+    <footer class="footer">
+        <label for="footer">&copy; 2024 - CSS Flexbox</label>
+    </footer>
+</body>
+
+</html>
