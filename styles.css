@@ -1,1 +1,51 @@
+* {
+            box-sizing: border-box;
+        }
 
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #f5f6f7;
+        }
+
+        .header {
+            text-align: center;
+            text-transform: uppercase;
+            padding: 32px;
+            background-color: #0a0a23;
+            color: #fff;
+            border-bottom: 4px solid #fdb347;
+        }
+
+        .gallery {
+            /* In this case, I have 3 columns in a row */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 330px;
+            height: 300px;
+            object-fit: contain;
+        }
+
+        .gallery::after {
+            content: "";
+            /* In this case, I check the width if image is aligned in the previous row images. Luckily, this measurements was aligned when I add an image. */
+            width: 675px;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 2.15rem 0 0 0;
+            padding: 32px;
+            color: #555;
+        }
